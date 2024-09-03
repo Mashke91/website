@@ -1,6 +1,6 @@
 :root {
 	--ultra-light:hsl(33,100%,98%);
-	--ultra-light-trans-20:hsla(33,100%,98%,20%);
+	--ultra-light-trans-30:hsla(33,100%,98%,30%);
 	--ultra-light-trans-5:hsla(33,100%,98%,5%);
 	--light:hsl(33,100%,95%);
 	--medium:hsl(56,7%,51%);
@@ -24,7 +24,7 @@ img {
 .callout {
     font-size: 5rem;
     font-weight: 600;
-    color: var(--ultra-light-trans-20);
+    color: var(--ultra-light-trans-30);
     line-height: 1;
 }
 h1 {
@@ -35,7 +35,7 @@ h1 {
 h2 {
 	font-size: 4rem;
 	font-weight: 600;
-	color: var(--ultra-light-trans-20);
+	color: var(--ultra-light-trans-30);
     line-height: 1.2;
 
 }
@@ -161,9 +161,71 @@ figure {
 	background-color: var(--ultra-light-trans-5);
 	padding: 2em 1em;
 	display: grid;
+	gap: calc(var(--space-s) * 2);
 }
 .media-wrapper-mockup {
 	background-color: var(--ultra-light-trans-5);
 	padding: 2em 1em;
 	display: grid;
+}
+.skills-wrapper ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+.list-wrapper,
+.skills-wrapper__top {
+	display: flex;
+	gap: calc(var(--space-s) * 2);
+	flex-direction: column;
+}
+.list-wrapper__top {
+	display: flex;
+	gap: calc(var(--space-s) * 1);
+	flex-direction: column;
+}
+.subtitle {
+	font-size: 1.8rem;
+	font-weight: 500;
+}
+.list-wrapper__bottom,
+.skills-wrapper__bottom {
+	display: flex;
+	gap: calc(var(--space-s) * 1);
+	flex-direction: column;
+}
+.split-container {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--space-s) * 2.5);
+}
+.specs-wrapper {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--space-s) * 2);
+}
+.icon-box {
+	display: inline-flex;
+	flex-direction: column;
+	align-self:flex-start;
+}
+.icon-box img {
+	max-width: 2.4rem;
+}
+.icon-box ul {
+	list-style-type: none;
+	padding-inline-start: 0;
+}
+.icon-box .subtitle {
+	border-bottom: 1px solid var(--ultra-light);
+	margin-block-end: calc(var(--space-s) * 0.5) ;
+}
+.content {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--space-s) * 1);
+}
+.description {
+	display: flex;
+	flex-direction: column;
+	gap: calc(var(--space-s) * 1);
 }

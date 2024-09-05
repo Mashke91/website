@@ -229,3 +229,51 @@ figure {
 	flex-direction: column;
 	gap: calc(var(--space-s) * 1);
 }
+.icon-btn {
+	display: flex;
+	padding-block:3px;
+	/*
+	border: 1px solid var(--ultra-light);
+	padding-block: 0.5em;
+	padding-inline: 1em;
+	border-radius: 0.5em 0 0.5em 0;*/
+	/*box-shadow: -2px 2px 0 0 red;*/
+}
+.project-short__icon-wrapper {
+	display: flex;
+	align-items: flex-end;
+}
+.text-btn {
+	display: flex;
+	align-items: center;
+	gap: calc(var(--space-s)*1);
+}
+.text-btn svg {
+	padding-block-start: 3.5px;
+}
+.btn {
+	padding-block: 0.5em;
+	padding-inline: 1em;
+	border-radius: 0.5em 0 0.5em 0;
+	border: 1px solid var(--ultra-light);
+}
+.button-wrapper {
+	text-align: center;
+}
+.social a {
+	line-height: 0;
+    display: flex;
+}
+.social svg {
+	height: 3.5rem;
+	width: auto;
+}
+.social {
+	display: flex;
+	gap: calc(var(--space-s)*3);
+	justify-content: center;
+}
+.footer {
+	gap: calc(var(--space-s)*2.5);
+	padding-block-end: calc(var(--space-s)*4);
+}

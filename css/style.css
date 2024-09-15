@@ -14,7 +14,7 @@ body {
 	background-color:var(--dark) ;
 	font-family: "Raleway", sans-serif;
 	color: var(--light);
-	font-size: clamp(1rem, 0.9135rem + 0.3846vw, 1.25rem);
+	font-size: clamp(1rem, 0.917rem + 0.37vw, 1.25rem);
 	font-weight: 300;
 	line-height: 1.6;
 }
@@ -22,7 +22,7 @@ img {
 	width: 100%;
 }
 .callout {
-    font-size: clamp(5rem, 0.9135rem + 0.3846vw, 8rem);
+    font-size: clamp(5rem, 4rem + 4.444vw, 8rem);
     font-weight: 600;
     color: var(--ultra-light-trans-30);
     line-height: 1;
@@ -31,19 +31,19 @@ img {
 	order: -1;
 }
 h1 {
-	font-size: clamp(1rem, 0.9135rem + 0.3846vw, 1.25rem);
+	font-size: clamp(1rem, 0.917rem + 0.37vw, 1.25rem);
 	font-weight: 300;
 	line-height: 1.6;
 }
 h2 {
-	font-size: clamp(2.5rem, 0.9135rem + 0.3846vw, 4.375rem);
+	font-size: clamp(2.5rem, 1.875rem + 2.778vw, 4.375rem);
 	font-weight: 600;
 	color: var(--ultra-light-trans-30);
     line-height: 1.2;
 
 }
 h3 {
-	font-size: clamp(1.375rem, 0.9135rem + 0.3846vw, 2.5rem);
+	font-size: clamp(1.375rem, 1rem + 1.667vw, 2.5rem);
 	font-weight: 600;
 	line-height: 1.2;
 }
@@ -102,8 +102,8 @@ section {
 	padding-block: calc(var(--space-s) * 1.5);
 }
 header{
-	padding-inline: var(--space-s);
-	padding-block: calc(var(--space-s) * .5);
+	padding-inline: calc(var(--space-s) * 2);
+	padding-block: calc(var(--space-s) * 2);
 }
 footer {
 	padding-inline: var(--space-s);
@@ -114,6 +114,9 @@ footer {
 	display:flex;
 	flex-direction: column;
 	gap: calc(var(--space-s) * 2);
+	width: 90%;
+	max-width: 1000px;
+	margin-inline: auto;
 }
 .content-header {
 	display: flex;
@@ -344,6 +347,9 @@ left: 0;
 right: 0;
 z-index: 1;
 }
+.project-short:hover .icon-btn {
+	margin-inline-start:  1rem;
+}
 @media (min-width: 768px) {
 	.split-container {
 		flex-direction: row;
@@ -373,6 +379,8 @@ z-index: 1;
     }
     #my_journal .media-wrapper-mockup,
     #social_spotter .media-wrapper-mockup {
+    	position: sticky;
+    	top: 5em;
     	align-self: flex-start;	
     }
     .button-wrapper {
@@ -386,10 +394,6 @@ z-index: 1;
     }
 }
 @media (min-width:1024px) {
-	.container {
-		max-width: 1000px;
-		margin-inline: auto;
-	}
 	.project-short {
 		width: 40rem;
 	}

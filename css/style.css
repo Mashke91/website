@@ -348,7 +348,7 @@ right: 0;
 z-index: 1;
 }
 .project-short:hover .icon-btn {
-	margin-inline-start:  1rem;
+	margin-inline-start:  2rem;
 }
 @media (min-width: 768px) {
 	.split-container {

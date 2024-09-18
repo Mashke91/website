@@ -371,11 +371,13 @@ z-index: 1;
 .project-short .icon-btn,
 .media-wrapper-mockup svg,
 .media-wrapper-mockup,
-.btn {
+.btn, 
+.media-wrapper-mockup svg {
 	transition: all 0.3s ease-in-out;
 }
 .project-short:hover .icon-btn,
-.media-wrapper-mockup:hover .svg {
+.media-wrapper-mockup:hover .svg,
+.media-wrapper-mockup:hover svg {
 	margin-inline-start: 2rem;
 }
 .media-wrapper-mockup:not(.footer):hover {

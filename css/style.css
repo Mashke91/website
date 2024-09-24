@@ -86,6 +86,7 @@ nav a:active {
 }
 .logo img {
 	max-width: 2rem;
+	color: var(--ultra-light);
 }
 nav ul {
 	padding-inline-start: 0;
@@ -103,14 +104,14 @@ header .navtoggle {
 	display: none;
 }
 .navtoggle.responsive ul li:not(:last-child) {
-	display: none;
+	display: flex;
 }
 section {
 	padding-inline: var(--space-s);
 	padding-block: calc(var(--space-s) * 1.5);
 }
 header{
-	padding-inline: calc(var(--space-s) * 2);
+	padding-inline: calc(var(--space-s));
 	padding-block: calc(var(--space-s) * 2);
 }
 footer {
